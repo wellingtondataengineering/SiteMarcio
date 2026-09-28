@@ -1,0 +1,21 @@
+<svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Formalize e Organize - logo">
+  <defs>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#123A6B"/>
+      <stop offset="100%" stop-color="#1E5FA8"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#F0D577"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="54" height="54" rx="16" fill="url(#badgeGrad)"/>
+  <rect x="1" y="1" width="54" height="54" rx="16" fill="none" stroke="#F0D577" stroke-opacity="0.35" stroke-width="1"/>
+  <!-- bar chart -->
+  <rect x="14" y="30" width="6" height="12" rx="1.5" fill="url(#barGrad)"/>
+  <rect x="24" y="24" width="6" height="18" rx="1.5" fill="#F5F7FA"/>
+  <rect x="34" y="18" width="6" height="24" rx="1.5" fill="url(#barGrad)"/>
+  <!-- ascending arrow -->
+  <path d="M14 24 L24 16 L31 20 L41 12" stroke="#F0D577" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35 12 L41 12 L41 18" stroke="#F0D577" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
