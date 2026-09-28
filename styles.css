@@ -156,7 +156,7 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
 }
 
 .brand{display:flex;align-items:center;gap:10px;}
-.brand__logo{width:44px;height:44px;transition:transform .3s var(--ease);}
+.brand__logo{width:auto;height:44px;max-width:110px;object-fit:contain;transition:transform .3s var(--ease);}
 .brand:hover .brand__logo{transform:rotate(-6deg) scale(1.05);}
 .brand__text{display:flex;flex-direction:column;line-height:1.05;font-family:var(--font-head);}
 .brand__text strong{font-size:1rem;color:var(--navy-800);letter-spacing:.02em;}
@@ -283,7 +283,7 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
   gap:8px;
   animation:cardFloat 6s ease-in-out infinite;
 }
-.hero__card-logo{width:56px;height:56px;margin-bottom:8px;}
+.hero__card-logo{width:auto;height:56px;max-width:140px;object-fit:contain;margin-bottom:8px;}
 .hero__card--main h3{font-size:1.3rem;}
 .hero__card--main p{color:var(--ink-600);font-size:.9rem;}
 .hero__card-tags{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;}
@@ -643,7 +643,7 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
   border-bottom:1px solid rgba(255,255,255,.1);
 }
 .footer__brand{display:flex;gap:14px;align-items:flex-start;}
-.footer__logo{width:48px;height:48px;}
+.footer__logo{width:auto;height:48px;max-width:120px;object-fit:contain;}
 .footer__brand p{font-size:.88rem;color:rgba(255,255,255,.65);}
 .footer__brand strong{color:#fff;font-family:var(--font-head);}
 .footer__col h4{color:#fff;font-size:.95rem;margin-bottom:16px;}
