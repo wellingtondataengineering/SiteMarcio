@@ -761,6 +761,13 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
   position:relative;
   overflow:hidden;
 }
+.article-card__media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .5s var(--ease);
+}
+.article-card:hover .article-card__media img{transform:scale(1.08);}
 .article-card__media::after{
   content:'';
   position:absolute;
@@ -830,6 +837,11 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
   margin-bottom:8px;
   position:relative;
   overflow:hidden;
+}
+.article-cover img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 .article-cover::after{
   content:'';
