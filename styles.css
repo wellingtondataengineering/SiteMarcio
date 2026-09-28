@@ -164,13 +164,14 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
 .header:not(.is-scrolled) .brand__text strong{color:#fff;}
 .brand__text span{font-size:.72rem;font-weight:600;color:var(--gold-600);letter-spacing:.06em;}
 
-.nav{display:flex;align-items:center;gap:28px;}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:nowrap;}
 .nav a{
   font-size:.92rem;
   font-weight:600;
   color:#fff;
   position:relative;
   padding:4px 0;
+  white-space:nowrap;
   transition:color .25s;
 }
 .header.is-scrolled .nav a{color:var(--ink-600);}
