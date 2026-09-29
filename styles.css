@@ -691,10 +691,14 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
   border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   box-shadow:0 10px 26px rgba(37,211,102,.45);
-  z-index:200;
+  z-index:300;
+  transform:translateZ(0);
+  -webkit-transform:translateZ(0);
+  will-change:transform;
+  backface-visibility:hidden;
   transition:transform .3s var(--ease), width .3s var(--ease), height .3s var(--ease);
 }
-.whatsapp-float:hover{transform:scale(1.1);}
+.whatsapp-float:hover{transform:translateZ(0) scale(1.1);}
 .whatsapp-float .icon{width:30px;height:30px;fill:#fff;transition:width .3s var(--ease), height .3s var(--ease);}
 .whatsapp-float__ping{
   position:absolute;
@@ -717,10 +721,14 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
   border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   box-shadow:0 10px 26px rgba(214,36,159,.4);
-  z-index:200;
+  z-index:300;
+  transform:translateZ(0);
+  -webkit-transform:translateZ(0);
+  will-change:transform;
+  backface-visibility:hidden;
   transition:transform .3s var(--ease), width .3s var(--ease), height .3s var(--ease), bottom .3s var(--ease);
 }
-.instagram-float:hover{transform:scale(1.1);}
+.instagram-float:hover{transform:translateZ(0) scale(1.1);}
 .instagram-float .icon{width:28px;height:28px;fill:#fff;transition:width .3s var(--ease), height .3s var(--ease);}
 
 /* ===== Responsive ===== */
@@ -744,9 +752,9 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
 }
 
 @media (max-width:640px){
-  .whatsapp-float{width:46px;height:46px;bottom:16px;right:16px;}
+  .whatsapp-float{width:46px;height:46px;bottom:28px;right:16px;}
   .whatsapp-float .icon{width:24px;height:24px;}
-  .instagram-float{width:46px;height:46px;bottom:70px;right:16px;}
+  .instagram-float{width:46px;height:46px;bottom:82px;right:16px;}
   .instagram-float .icon{width:22px;height:22px;}
 }
 
