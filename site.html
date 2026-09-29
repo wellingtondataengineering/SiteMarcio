@@ -63,7 +63,11 @@
 
 *{margin:0;padding:0;box-sizing:border-box;}
 
-html{scroll-behavior:smooth;}
+html{
+  scroll-behavior:smooth;
+  overflow-x:hidden;
+  width:100%;
+}
 
 body{
   font-family:var(--font-body);
@@ -71,6 +75,8 @@ body{
   background:var(--bg);
   line-height:1.6;
   overflow-x:hidden;
+  width:100%;
+  position:relative;
 }
 
 img{max-width:100%;display:block;}
@@ -818,6 +824,9 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
   .whatsapp-float .icon{width:24px;height:24px;}
   .instagram-float{width:46px;height:46px;bottom:82px;right:16px;}
   .instagram-float .icon{width:22px;height:22px;}
+  .btn{white-space:normal;text-align:center;}
+  .hero__actions{width:100%;}
+  .hero__actions .btn{width:100%;justify-content:center;}
 }
 </style>
 </head>
