@@ -250,6 +250,8 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
     linear-gradient(160deg,rgba(11,33,56,.93) 0%, rgba(18,58,107,.90) 55%, rgba(30,95,168,.85) 100%),
     url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80') center/cover no-repeat;
   overflow:hidden;
+  contain:paint;
+  max-width:100vw;
 }
 .hero__bg{position:absolute;inset:0;z-index:0;pointer-events:none;}
 .shape{
@@ -262,6 +264,12 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
 .shape--1{width:480px;height:480px;background:var(--gold-400);top:-160px;right:-140px;animation:float1 12s ease-in-out infinite;}
 .shape--2{width:360px;height:360px;background:#fff;bottom:-120px;left:-90px;opacity:.18;animation:float2 14s ease-in-out infinite;}
 .shape--3{width:240px;height:240px;background:var(--gold-400);opacity:.12;top:45%;left:48%;animation:float1 16s ease-in-out infinite;}
+
+@media (max-width:640px){
+  .shape--1{width:260px;height:260px;top:-80px;right:-70px;}
+  .shape--2{width:220px;height:220px;bottom:-60px;left:-50px;}
+  .shape--3{width:160px;height:160px;}
+}
 
 @keyframes float1{0%,100%{transform:translate(0,0);}50%{transform:translate(-30px,30px);}}
 @keyframes float2{0%,100%{transform:translate(0,0);}50%{transform:translate(30px,-20px);}}
