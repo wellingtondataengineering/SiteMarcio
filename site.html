@@ -798,7 +798,8 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
 @media (max-width:800px){
   .nav{
     position:fixed;
-    top:0;right:0;
+    top:0;
+    left:100%;
     height:100vh;
     width:min(300px,80vw);
     background:var(--navy-900);
@@ -806,11 +807,10 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
     align-items:flex-start;
     padding:100px 32px 40px;
     gap:24px;
-    transform:translateX(100%);
-    transition:transform .4s var(--ease);
+    transition:left .4s var(--ease);
     box-shadow:-10px 0 40px rgba(0,0,0,.3);
   }
-  .nav.is-open{transform:translateX(0);}
+  .nav.is-open{left:calc(100% - min(300px,80vw));}
   .nav a{color:#fff;font-size:1.05rem;}
   .nav__toggle{display:flex;}
   .header__cta{display:none;}
