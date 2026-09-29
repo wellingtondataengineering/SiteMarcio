@@ -766,9 +766,9 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy-800);line-height:1.2;f
 }
 
 @media (max-width:640px){
-  .whatsapp-float{width:46px;height:46px;bottom:60px;right:16px;}
+  .whatsapp-float{width:46px;height:46px;bottom:25vh;right:16px;}
   .whatsapp-float .icon{width:24px;height:24px;}
-  .instagram-float{width:46px;height:46px;bottom:114px;right:16px;}
+  .instagram-float{width:46px;height:46px;bottom:calc(25vh + 54px);right:16px;}
   .instagram-float .icon{width:22px;height:22px;}
 }
 
