@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://formalizeeorganize.com.br/sitemap.xml
